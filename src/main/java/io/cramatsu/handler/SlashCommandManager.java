@@ -11,7 +11,7 @@ public class SlashCommandManager {
 
     private final JDA jda;
     private final SlashEventHandler eventHandler;
-    private final Map<String, SlashCommand> slashCommandCollection = new HashMap<String, SlashCommand>();
+    private final Map<String, SlashCommand> slashCommandCollection = new HashMap<>();
 
     public SlashCommandManager(JDA jda) {
         this.jda = jda;
@@ -19,9 +19,6 @@ public class SlashCommandManager {
 
     }
 
-    /**
-     * @param command {@link }
-     */
     public void addCommand(@NonNull SlashCommand command) {
         jda.upsertCommand(command.getInfo()).queue();
         slashCommandCollection.put(command.getName(), command);
