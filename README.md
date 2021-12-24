@@ -13,8 +13,6 @@
 * To create a command, inherit the abstract class `SlashCommand` and implement the `execute()` method and
   constructor. [Example](https://github.com/cramatsu/slash-command-handler/blob/master/src/example/java/commands/Ping.java)
 
-# Example
-
 **[Program example](https://github.com/cramatsu/slash-command-handler/tree/master/src/example/java)**
 
 ---
