@@ -9,7 +9,7 @@ import java.util.Collections;
 public class Main {
     public static void main(String[] args) throws InterruptedException, LoginException {
 
-        JDA jda = JDABuilder.createDefault("YOUR TOKEN🥰", Collections.emptyList())
+        JDA jda = JDABuilder.createLight("YOUR TOKEN🥰", Collections.emptyList())
                 .build();
         SlashCommandManager slashCommandManager = new SlashCommandManager(jda);
 
